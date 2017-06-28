@@ -1,0 +1,45 @@
+<style>
+    .imagine .text {
+        position:relative;
+        bottom:200px;
+        left:80px;
+        visibility:hidden;
+    }
+    .imagine:hover .text {
+
+        visibility:visible;
+    }
+    .imagine:hover {
+        position:relative;
+        opacity:1;
+        visibility:visible;
+    }
+    .imagine:hover .aaa{
+        position:relative;
+        opacity:0.3;
+        visibility:visible;
+    }
+</style>
+<div ng-app="hrApp">
+
+    <h1> Shopping</h1>
+    <button onclick="viewObjects()"> Go to shopping cart </button>
+    <div ng-controller="Listare">
+        <span class="imagine" ng-repeat="pic in pictures">
+            <img class="aaa" src="{{pic.url}}" height="300" width="200"/>
+
+            <br>{{pic.label}}
+            <p class="text">Price:{{pic.label2}}</p>
+
+        </span>
+        <span ng-click="selection($event)">{{pic.url}} > </span>
+        <span ng-click="selection($event)">{{pic.label}} </span>
+    </div>
+    <button> </button>
+    <script type="text/javascript" src="../bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../scripts/app.js"></script>
+    <script type="text/javascript" src="../scripts/Listare.js"></script>
+
+</div>
