@@ -1,0 +1,9 @@
+Inserati text property:
+<select  ng-options="color.text for color in colors track by color.text" ng-model="selected"/>
+<br>
+Inserati group by:
+<select ng-options="color.text group by color.type for color in colors " ng-model="selected2" ng-change="changeColor()"/>
+<span ng-class="variabila">Some text </span>
+<input name="input" ng-model="input1">
+<input name="input" ng-model="input2">
+
