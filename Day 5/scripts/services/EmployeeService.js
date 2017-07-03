@@ -22,5 +22,4 @@ hrApp.service('EmployeeService', ['$http', 'CommonResourcesFactory', function ($
                     });
             }
         }
-    }]
-);
+    }]);
