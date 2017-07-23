@@ -1,0 +1,15 @@
+.description {
+    text-align: center;
+    color: #330099;
+}
+#modifica{
+    background-color:black;
+    width:250px;
+    height:190px;
+}
+#modifica:hover{
+  background-image:url('../chuck.jpg');
+    background-repeat: no-repeat;
+
+    background-color: inherit;
+}

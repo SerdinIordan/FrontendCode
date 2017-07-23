@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo HR</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+<body>
+    <h1>HR Employees List Page</h1>
+    <div class="panel panel-default">
+        <div class="panel-heading description">
+            Employees list
+        </div>
+        <div class="panel-body">
+            <div>
+                <p>
+                    <button type="button" onclick="showList()">Show List</button>
+                </p>
+            </div>
+            <div id="listcontainer">
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="index.html"> Back to Home Page</a>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading description">
+            Add employee
+        </div>
+        <div class="container">
+            <div class="form-group">
+                <label for="firstName">First Name: </label>
+                <input type="text" class="form-control" id="firstName"/>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name: </label>
+                <input type="text" class="form-control" id="lastName"/>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone: </label>
+                <input type="text" class="form-control" id="phone"/>
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary: </label>
+                <input type="number" class="form-control" id="salary"/>
+            </div>
+            <p>
+                <button type="button" onclick="addEmployee()">Add employee</button>
+            </p>
+            <button type="button" onclick="showSum()" class="btn btn- default"> Show Sum</button>
+            <div id="calculat">
+
+            </div>
+            <button type="button" onclick="showDelete()" class="btn btn- default"> Delete Last Employee</button>
+
+            <p>
+            Number Sorting: <input type="number" id="sortby"/>
+            </p>
+            <div id="NumberSorting">
+
+            </div>
+            <button type="button" onclick="showSort()" class="btn btn- default"> Show Sort</button>
+
+            <p>
+                Filtrare: <input type="text" id="filtrare"/>
+            </p>
+            <button type="button" onclick="filtrare()" class="btn btn- default"> Filtrare1</button>
+
+            <div class="btn-group">
+                <button type="button" onclick="showMenu()" class="btn btn- default"> Show </button>
+                <button type="button" onclick="hideMenu()" class="btn btn- default"> Hide </button>
+                <div id="numes">
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        function showMenu() {
+            document.getElementById("numes").style.display = 'block';
+            filtrare1();
+        }
+        function hideMenu() {
+            document.getElementById("numes").style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
